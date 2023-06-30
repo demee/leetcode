@@ -2,17 +2,12 @@ package org.demee.removeDuplicates;
 
 public class RemoveDuplicatesSolution {
     public static void main(String[] args) {
-        int[] nums = { 1,1,1,2,2,3 };
+       
         RemoveDuplicatesSolution removeDuplicatesSolution = new RemoveDuplicatesSolution();
 
-        int k = removeDuplicatesSolution.removeSomeDuplicates(nums);
+        removeDuplicatesSolution.replaceString();
 
-        //print k
-        System.out.println(k);
-        //print array nums
-        for (int i = 0; i < k; i++) {
-            System.out.print(nums[i] + " ");
-        }
+
     }
 
     public int removeDuplicates(int[] nums) {
@@ -53,5 +48,16 @@ public class RemoveDuplicatesSolution {
         }
 
         return k + 1;
+    }
+
+    public void replaceString() {
+                String s = "A man, a plan, a canal: Panama";
+
+        s.length();
+
+        // remove all non alphanumeric characters form the string s
+        s = s.replaceAll("[^a-zA-Z0-9]", "");
+        // print s
+        System.out.println(s);
     }
 }
